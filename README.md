@@ -19,5 +19,5 @@ $ git submodule update
 ```sh
 $ docker build . -t ruby-bot
 $ docker run --name ruby-linebot -itd -p 8888:4567 --workdir /workspace -v $PWD/workspace:/workspace ruby-bot
-$ docker exec -i -t ruby-linebot /bin/sh
+$ docker exec -it ruby-linebot /bin/sh
 ```
