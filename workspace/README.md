@@ -9,7 +9,7 @@ LINE_CHANNEL_TOKEN=XXXXXXXXXXXXXXXXXXXx
 
 ## gemモジュールのインストール
 ```sh
-$ bundle install --path vendor/bundle
+$ bundle install
 ```
 
 ## WEBサーバーの起動
