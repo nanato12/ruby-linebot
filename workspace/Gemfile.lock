@@ -2,7 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     dotenv (2.7.6)
-    line-bot-api (1.18.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     rack (2.2.3)
@@ -23,7 +22,6 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  line-bot-api
   rufo
   sinatra
   webrick
