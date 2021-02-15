@@ -15,7 +15,7 @@ $ bundle install
 ## WEBサーバーの起動
 
 ```sh
-$ bundle exec ruby app.rb
+$ bundle exec ruby app.rb -o 0.0.0.0
 ```
 
 ## フォーマッタ
