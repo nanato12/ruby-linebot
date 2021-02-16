@@ -1,6 +1,7 @@
 require "dotenv"
 require "sinatra"
-require "./line-bot-sdk-ruby/lib/line-bot-api.rb"
+require "line-bot-api"
+require "./linebot/linebot.rb"
 
 Dotenv.load
 
@@ -26,12 +27,8 @@ post "/callback" do
     when Line::Bot::Event::Message
       case event.type
       when Line::Bot::Event::MessageType::Text
-        puts event.message
-        message = {
-          type: "text",
-          text: event.message["text"],
-        }
-        client.reply_message(event["replyToken"], message)
+        text_message = TextMessage.new(client, event)
+        text_message.reply
       end
     end
   end
