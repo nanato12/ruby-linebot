@@ -20,7 +20,7 @@ $ bundle exec ruby app.rb -o 0.0.0.0
 
 ## フォーマッタ
 - rufo
-
 ```sh
-$ rufo .
+$ rufo app.rb
+$ rufo linebot/
 ```
